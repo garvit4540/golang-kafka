@@ -86,7 +86,7 @@ func pushCommentToQueue(topic string, message []byte) error {
 
 	producer, err := connectProducer(brokersUrl)
 	if err != nil {
-		trace.LogInfo(trace.ErrorConnectingWithProducer, map[string]interface{}{
+		trace.LogInfo(trace.ErrorConnectingProducer, map[string]interface{}{
 			"error": err,
 		})
 		return err
