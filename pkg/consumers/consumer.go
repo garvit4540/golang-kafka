@@ -1,4 +1,4 @@
-package consumers
+package main
 
 import (
 	"github.com/IBM/sarama"
